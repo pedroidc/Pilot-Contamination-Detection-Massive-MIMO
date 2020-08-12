@@ -52,3 +52,33 @@ def awgn(sig, SNR, sig_power=1):
     sig_noisy = sig + noise
 
     return sig_noisy
+
+def razaoMatrizR(Y, L, M=128, SNR=20, potenciaSinal=1, retornarApenasParteReal=True, verbose=False):
+    
+    # OBTENDO A POTENCIA DO RUIDO N0
+    N0 = potenciaSinal/(10**(SNR/10))
+    
+    # CRIANDO A MATRIZ IDENTIDADE E FAZENDO A OPERACAO HERMITIANA EM Y
+    I  = np.identity(L)
+    YH = np.conjugate(Y).T
+    
+    # CONSTRUINDO A MATRIZ R
+    R = np.matmul(YH, Y)/M - N0 * I
+    
+    # DOIS MAIORES AUTOVALORES
+    autovalores = np.sort(np.linalg.eigvals(R))
+    a1 = autovalores[-1]
+    a2 = autovalores[-2]
+    
+    if verbose:
+        print("R:", np.matrix(R))
+        print("\nAutovalores:", autovalores)
+        print("\nMaior autovalor:", a1)
+        print("\nSegundo maior autovalor:", a2)
+        print("\nRazão:", (a1/a2).real)
+    
+    # RETORNO A RAZAO
+    if retornarApenasParteReal:
+        return (a1/a2).real
+    else:
+        return a1/a2
