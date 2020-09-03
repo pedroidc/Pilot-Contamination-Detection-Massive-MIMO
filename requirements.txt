@@ -1,3 +1,33 @@
+# PRA GARANTIR QUE A INSTALACAO DAS DEPENDENCIAS VAI SER TRANQUILA, VAMOS FAZER UM AMBIENTE VIRTUAL. A VERSAO DO PYTHON UTILIZADA NESSE PROJETO E A 3.6.9.
+# VAMOS USAR PYENV PQ ELE GERENCIA MTO BEM AS VERSOES DO PYTHON NO SISTEMA OPERACIONAL, SEM BAGUNCAR AS COISAS, E PQ ELE TEM UMA INTEGRACAO OTIMA COM O VIRTUALENV
+# TUTORIAL PARA INSTALACAO DE UM AMBIENTE VIRTUAL COM A VERSAO 3.6.9 USANDO PYENV:
+#
+# 1) GARANTA QUE VC TEM AS DEPENDENCIAS PRA INSTALACAO DO PYENV (DEBIAN BASED)
+# sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+#
+# 2) INSTALE O PYENV
+# curl https://pyenv.run | bash
+#
+# 3) ADICIONE AS LINHAS ABAIXO AO ~/.bashrc E REINICIE O COMPUTADOR
+# export PATH="$HOME/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+#
+# 4) INSTALE A VERSAO 3.6.9 NO SEU SISTEMA USANDO O PYENV
+# pyenv install 3.6.9
+#
+# 5) CRIE O AMBIENTE VIRTUAL
+# pyenv virtualenv 3.6.9 venvAICOM
+#
+# 6) ATIVE O AMBIENTE, ATUALIZE O PIP E INSTALE AS DEPENDENCIAS DESSE ARQUIVO
+# pyenv activate venvAICOM
+# pip install --upgrade pip 
+# pip install -r /caminho/para/esse/arquivo/requirements.txt
+#
+# PRONTO, E SO ISSO. PRA DESATIVAR O AMBIENTE VIRTUAL E SO RODAR pyenv deactivate
+#
+#
+#--------------------------------------------------------------------------------
 argon2-cffi==20.1.0
 attrs==20.1.0
 backcall==0.2.0
