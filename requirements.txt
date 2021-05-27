@@ -8,29 +8,30 @@
 # 2) INSTALE O PYENV
 # curl https://pyenv.run | bash
 #
-# 3) ADICIONE AS LINHAS ABAIXO AO ~/.bashrc E REINICIE O COMPUTADOR
+# 3) ADICIONE AS LINHAS ABAIXO AO ~/.bashrc
 # export PATH="$HOME/.pyenv/bin:$PATH"
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 #
-# 4) INSTALE A VERSAO 3.9.1 NO SEU SISTEMA USANDO O PYENV
+# 4) REINICIE O TERMINAL
+# exec "$SHELL"
+#
+# 5) INSTALE A VERSAO 3.9.1 NO SEU SISTEMA USANDO O PYENV
 # pyenv install 3.9.1
 #
-# 5) CRIE O AMBIENTE VIRTUAL
+# 6) CRIE O AMBIENTE VIRTUAL
 # pyenv virtualenv 3.9.1 venv_aicom
 #
-# 6) ATIVE O AMBIENTE, ATUALIZE O PIP E INSTALE AS DEPENDENCIAS DESSE ARQUIVO
+# 7) ATIVE O AMBIENTE, ATUALIZE O PIP E INSTALE AS DEPENDENCIAS DESSE ARQUIVO
 # pyenv activate venv_aicom
 # pip install --upgrade pip 
 # pip install -r /caminho/para/esse/arquivo/requirements.txt
 #
 # PRONTO, E SO ISSO. PRA DESATIVAR O AMBIENTE VIRTUAL E SO RODAR pyenv deactivate
-#
-#
 #--------------------------------------------------------------------------------
-scikit-learn
-joblib
-jupyter
-matplotlib
-pandas
-numpy
+scikit-learn==0.24.2
+joblib==1.0.1
+jupyter==1.0.0
+matplotlib==3.4.2
+pandas==1.2.4
+numpy==1.20.3
