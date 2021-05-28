@@ -1,0 +1,51 @@
+TESTE 0 - MATRIZES DE CONFUSÃO DOS MODELOS:
+	PARÂMETROS FIXOS:
+		qtd antenas:  256 
+		qtd símbolos: 300
+	    features:     qtd de usuários e E
+	PARÂMETROS VARIÁVEIS:
+		qtd usuários de treinamento e teste: de 1 até 256 passo 16
+		snrs de treinamento e teste:         de -10 até 30 passo 5
+		modelos:                             árvore, perceptron, lda, svm
+	OBS:
+		treinar e testar os modelos com todos esses parâmetros variáveis juntos no msm dataset
+
+TESTE 1 - INFLUÊNCIA DA SNR:
+	PARÂMETROS FIXOS:
+		modelo:       árvore
+		qtd usuários: 64
+		qtd antenas:  256
+		qtd símbolos: 300
+	    features:     qtd de usuários e E
+	PARÂMETROS VARIÁVEIS:
+		snr de treinamento: de -10 até 30 passo 5
+		snr de teste:       de -10 até 30 passo 1
+	OBS:
+		treinar e testar os modelos com todas as snrs juntas no msm dataset
+
+TESTE 2 - INFLUÊNCIA DA QTD DE USUÁRIOS:
+	PARÂMETROS FIXOS:
+		modelo:       árvore
+		snr:          10
+		qtd antenas:  256
+		qtd símbolos: 300
+	    features:     qtd de usuários e E
+	PARÂMETROS VARIÁVEIS:
+		qtd usuários treinamento: de 1 até 256 passo 16
+		qtd usuários teste:       de 1 até 256 passo 4
+	OBS:
+		treinar e testar os modelos com todas as qtd de usuários juntas no msm dataset, já que isso é uma feature
+
+
+TESTE 3 - INFLUÊNCIA DA QTD DE ANTENAS:
+	PARÂMETROS FIXOS:
+		modelo:       árvore
+		snr:          10
+		qtd usuarios: 64
+		qtd símbolos: 300
+	    features:     qtd de usuários e E
+	PARÂMETROS VARIÁVEIS:
+		qtd antenas treinamento: de 64 até 256 passo 16
+		qtd antenas teste:       de 64 até 256 passo 4
+	OBS:
+		treinar e testar um modelo independente para cada qtd de antenas

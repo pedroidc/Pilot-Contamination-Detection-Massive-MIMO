@@ -1,7 +1,3 @@
-metodologia.txt
+.ipynb_checkpoints/
 
-Jupyter/__pycache__/
-
-Jupyter/.ipynb_checkpoints/
-
-Python/__pycache__/
+__pycache__/
