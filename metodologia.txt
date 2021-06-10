@@ -46,6 +46,6 @@ TESTE 3 - INFLUÊNCIA DA QTD DE ANTENAS:
 	    features:     qtd de usuários e E
 	PARÂMETROS VARIÁVEIS:
 		qtd antenas treinamento: de 64 até 256 passo 16
-		qtd antenas teste:       de 64 até 256 passo 4
+		qtd antenas teste:       de 64 até 256 passo 16
 	OBS:
 		treinar e testar um modelo independente para cada qtd de antenas
