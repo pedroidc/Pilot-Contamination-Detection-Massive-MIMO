@@ -6,7 +6,6 @@
         "repetibilidadeDataset": 100,
         "qtdFolders": 10,
         "featuresSelecionadas": [
-            "qtdAntenas",
             "E"
         ],
         "rangePotEspiao": [
