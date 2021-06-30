@@ -1,0 +1,142 @@
+{
+    "DecisionTreeClassifier_16250627969266696": {
+        "qtdAntenas": 256,
+        "qtdSimbolos": 300,
+        "repetibilidadeDataset": 100,
+        "qtdFolders": 10,
+        "featuresSelecionadas": [
+            "qtdUsuarios",
+            "E"
+        ],
+        "acuraciaMedia": 0.9983137254901961,
+        "acuraciaDesvio": 0.00030348200696064017,
+        "precisaoMedia": 0.9983276175076987,
+        "precisaoDesvio": 0.0002801078678234031,
+        "revocacaoMedia": 0.998301573857886,
+        "revocacaoDesvio": 0.0004249003584567575,
+        "tempoProcessamentoMedio": 8.827820478701123e-05,
+        "tempoProcessamentoDesvio": 4.6437011231172e-06,
+        "somaMatrizesConfusao": [
+            [
+                76372,
+                128
+            ],
+            [
+                130,
+                76370
+            ]
+        ]
+    },
+    "Perceptron_16250628223587759": {
+        "qtdAntenas": 256,
+        "qtdSimbolos": 300,
+        "repetibilidadeDataset": 100,
+        "qtdFolders": 10,
+        "featuresSelecionadas": [
+            "qtdUsuarios",
+            "E"
+        ],
+        "acuraciaMedia": 0.9436078431372549,
+        "acuraciaDesvio": 0.11814650991147947,
+        "precisaoMedia": 0.9501641381372178,
+        "precisaoDesvio": 0.1325873634129008,
+        "revocacaoMedia": 0.972497360609171,
+        "revocacaoDesvio": 0.05765741295740288,
+        "tempoProcessamentoMedio": 7.737472010593789e-05,
+        "tempoProcessamentoDesvio": 5.121756031840891e-06,
+        "somaMatrizesConfusao": [
+            [
+                69969,
+                6531
+            ],
+            [
+                2097,
+                74403
+            ]
+        ]
+    },
+    "LinearDiscriminantAnalysis_16250628439360306": {
+        "qtdAntenas": 256,
+        "qtdSimbolos": 300,
+        "repetibilidadeDataset": 100,
+        "qtdFolders": 10,
+        "featuresSelecionadas": [
+            "qtdUsuarios",
+            "E"
+        ],
+        "acuraciaMedia": 0.8987450980392158,
+        "acuraciaDesvio": 0.0011118029372530747,
+        "precisaoMedia": 1.0,
+        "precisaoDesvio": 0.0,
+        "revocacaoMedia": 0.7974697210962667,
+        "revocacaoDesvio": 0.003050491485693744,
+        "tempoProcessamentoMedio": 7.444921661825741e-05,
+        "tempoProcessamentoDesvio": 6.690076514215434e-07,
+        "somaMatrizesConfusao": [
+            [
+                76500,
+                0
+            ],
+            [
+                15492,
+                61008
+            ]
+        ]
+    },
+    "SGDClassifier_1625064207920606": {
+        "qtdAntenas": 256,
+        "qtdSimbolos": 300,
+        "repetibilidadeDataset": 100,
+        "qtdFolders": 10,
+        "featuresSelecionadas": [
+            "qtdUsuarios",
+            "E"
+        ],
+        "acuraciaMedia": 0.9815751633986929,
+        "acuraciaDesvio": 0.001675154600768945,
+        "precisaoMedia": 0.9918040224300739,
+        "precisaoDesvio": 0.005986271147333561,
+        "revocacaoMedia": 0.9712467768857987,
+        "revocacaoDesvio": 0.00483167376909702,
+        "tempoProcessamentoMedio": 7.538125717562009e-05,
+        "tempoProcessamentoDesvio": 5.085038918995914e-06,
+        "somaMatrizesConfusao": [
+            [
+                75881,
+                619
+            ],
+            [
+                2200,
+                74300
+            ]
+        ]
+    },
+    "Hassan_16250642182785382": {
+        "qtdAntenas": 256,
+        "qtdSimbolos": 300,
+        "repetibilidadeDataset": 100,
+        "qtdFolders": 10,
+        "featuresSelecionadas": [
+            "E",
+            "eta"
+        ],
+        "acuraciaMedia": 0.8448169934640524,
+        "acuraciaDesvio": 0.0023154326997983504,
+        "precisaoMedia": 1.0,
+        "precisaoDesvio": 0.0,
+        "revocacaoMedia": 0.6896417848480325,
+        "revocacaoDesvio": 0.0029871114983687145,
+        "tempoProcessamentoMedio": 1.1305971083298229e-05,
+        "tempoProcessamentoDesvio": 5.316427908396467e-07,
+        "somaMatrizesConfusao": [
+            [
+                76500,
+                0
+            ],
+            [
+                23743,
+                52757
+            ]
+        ]
+    }
+}
