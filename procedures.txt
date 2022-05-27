@@ -1,0 +1,54 @@
+PROCEDURE 1 - snr and connected users:
+	
+	About: start using cross validation on training data to perform gridsearch on a decision tree. Then, take all the training data to fit one single model to be evaluated on tests 1.1 and 1.2.
+	
+	Fixed parameters:
+		antennas: 256
+		symbols:  300
+
+	Training data: 
+		users: 1 up to 64 step 16
+		snr:   -10 up to 30 step 5
+	
+	Test 1.1 data:
+		users: 64
+		snr:   -10 up to 30 step 1
+
+	Test 1.2 data:
+		users: 1 up to 64 step 4
+		snr:   10
+
+PROCEDURE 2 - antennas:
+
+	About: for each number of antennas, use all the data to perform gridsearch, fitting and predictions at each cross validation iteration. Then, use the predictions to evaluate metrics.
+
+	Fixed parameters:
+		symbols:  300
+		users:    64
+		snr:      10
+
+	Tests:
+		antennas: 64 up to 256 step 16
+		obs:      single dataset and models for each number of antennas
+
+DATASETS:
+
+	procedure_1_train.csv
+	procedure_1_test_1.csv
+	procedure_1_test_2.csv
+	procedure_2_16_antennas.csv
+	procedure_2_32_antennas.csv
+	procedure_2_48_antennas.csv
+	procedure_2_64_antennas.csv
+	procedure_2_80_antennas.csv
+	procedure_2_96_antennas.csv
+	procedure_2_112_antennas.csv
+	procedure_2_128_antennas.csv
+	procedure_2_144_antennas.csv
+	procedure_2_160_antennas.csv
+	procedure_2_176_antennas.csv
+	procedure_2_192_antennas.csv
+	procedure_2_208_antennas.csv
+	procedure_2_224_antennas.csv
+	procedure_2_240_antennas.csv
+	procedure_2_256_antennas.csv
