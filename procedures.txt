@@ -9,7 +9,7 @@ PROCEDURE 1 - snr and connected users:
 		symbols:  300
 
 	Training data: 
-		users: 1 up to 64 step 16
+		users: 1 up to 256 step 16
 		snr:   -10 up to 30 step 5
 	
 	Test 1.1 data:
@@ -17,7 +17,7 @@ PROCEDURE 1 - snr and connected users:
 		snr:   -10 up to 30 step 1
 
 	Test 1.2 data:
-		users: 1 up to 64 step 4
+		users: 1 up to 256 step 4
 		snr:   10
 
 PROCEDURE 2 - antennas:
@@ -28,7 +28,7 @@ PROCEDURE 2 - antennas:
 
 	Parameters:
 		symbols:  300
-		users:    1 up to 64 step 16
+		users:    1 up to 256 step 16
 		snr:      -10 up to 30 step 5
 		antennas: 64 up to 256 step 16
 		obs:      single dataset and models for each number of antennas
@@ -38,9 +38,6 @@ DATASETS:
 	procedure_1_train.csv
 	procedure_1_test_1.csv
 	procedure_1_test_2.csv
-	procedure_2_16_antennas.csv
-	procedure_2_32_antennas.csv
-	procedure_2_48_antennas.csv
 	procedure_2_64_antennas.csv
 	procedure_2_80_antennas.csv
 	procedure_2_96_antennas.csv
