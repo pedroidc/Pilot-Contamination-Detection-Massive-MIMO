@@ -53,4 +53,6 @@ DATASETS:
 	procedure_2_208_antennas.csv
 	procedure_2_224_antennas.csv
 	procedure_2_240_antennas.csv
-	procedure_2_256_antennas.csv
+	
+	obs: procedure_2_256_antennas.csv doesn't exist because 
+	it's the same as procedure_1_train.csv
