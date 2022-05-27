@@ -26,12 +26,10 @@ PROCEDURE 2 - antennas:
 	gridsearch, fitting and predictions at each cross validation 
 	iteration. Then, use the predictions to evaluate metrics.
 
-	Fixed parameters:
+	Parameters:
 		symbols:  300
-		users:    64
-		snr:      10
-
-	Tests:
+		users:    1 up to 64 step 16
+		snr:      -10 up to 30 step 5
 		antennas: 64 up to 256 step 16
 		obs:      single dataset and models for each number of antennas
 
