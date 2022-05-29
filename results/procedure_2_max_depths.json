@@ -1,0 +1,15 @@
+{
+    "antennas_64": 1,
+    "antennas_80": 1,
+    "antennas_96": 1,
+    "antennas_112": 1,
+    "antennas_128": 1,
+    "antennas_144": 4,
+    "antennas_160": 4,
+    "antennas_176": 4,
+    "antennas_192": 3,
+    "antennas_208": 1,
+    "antennas_224": 3,
+    "antennas_240": 3,
+    "antennas_256": 3
+}
