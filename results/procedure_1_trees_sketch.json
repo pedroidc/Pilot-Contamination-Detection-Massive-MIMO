@@ -1,0 +1,5 @@
+{
+    "depth_1": "|--- E <= 1.29\n|   |--- class: False\n|--- E >  1.29\n|   |--- class: True\n",
+    "depth_2": "|--- E <= 1.29\n|   |--- E <= 1.25\n|   |   |--- class: False\n|   |--- E >  1.25\n|   |   |--- class: False\n|--- E >  1.29\n|   |--- E <= 1.31\n|   |   |--- class: True\n|   |--- E >  1.31\n|   |   |--- class: True\n",
+    "depth_3": "|--- E <= 1.29\n|   |--- E <= 1.25\n|   |   |--- E <= 1.23\n|   |   |   |--- class: False\n|   |   |--- E >  1.23\n|   |   |   |--- class: False\n|   |--- E >  1.25\n|   |   |--- n_users <= 216.00\n|   |   |   |--- class: True\n|   |   |--- n_users >  216.00\n|   |   |   |--- class: False\n|--- E >  1.29\n|   |--- E <= 1.31\n|   |   |--- n_users <= 216.00\n|   |   |   |--- class: True\n|   |   |--- n_users >  216.00\n|   |   |   |--- class: False\n|   |--- E >  1.31\n|   |   |--- E <= 1.34\n|   |   |   |--- class: True\n|   |   |--- E >  1.34\n|   |   |   |--- class: True\n"
+}
