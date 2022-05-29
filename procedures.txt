@@ -24,12 +24,13 @@ PROCEDURE 2 - antennas:
 
 	About: for each number of antennas, use all the data to perform 
 	gridsearch, fitting and predictions at each cross validation 
-	iteration. Then, use the predictions to evaluate metrics.
+	iteration. Then, use only the predictions for 10 dB and 64 users
+	to evaluate metrics.
 
 	Parameters:
 		symbols:  300
-		users:    1 up to 256 step 16
-		snr:      -10 up to 30 step 5
+		users:    1 up to 256 step 16 to train and only 64 to test
+		snr:      -10 up to 30 step 5 to train and only 10 dB to test
 		antennas: 64 up to 256 step 16
 		obs:      single dataset and models for each number of antennas
 
